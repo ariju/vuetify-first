@@ -6,7 +6,7 @@
     <v-card-text>
       <v-form>
         <v-text-field label="ユーザ名" />
-        <v-text-field label="パスワード" />
+        <v-text-field type="password" label="パスワード" />
       </v-form>
     </v-card-text>
   </v-app>
