@@ -8,7 +8,7 @@
         <v-text-field prepend-icon="mdi-account-circle" label="ユーザ名" />
         <v-text-field prepend-icon="mdi-lock" append-icon="mdi-eye-off" type="password" label="パスワード" />
         <v-card-actions>
-          <v-btn>ログイン</v-btn>
+          <v-btn class="info">ログイン</v-btn>
         </v-card-actions>
       </v-form>
     </v-card-text>
