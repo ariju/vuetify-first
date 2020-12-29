@@ -7,11 +7,10 @@
       <v-card-text>
         <v-form>
           <v-text-field prepend-icon="mdi-account-circle" label="ユーザ名" />
-          <v-text-field
+          <v-text-field v-bind:type="showPassword ? 'text' : 'password'"
             prepend-icon="mdi-lock"
             append-icon="mdi-eye-off"
-            type="password"
-            label="パスワード"
+            label="パスワード" @click:append="showPassword = !showPassword"
           />
           <v-card-actions>
             <v-btn class="info">ログイン</v-btn>
@@ -25,6 +24,8 @@
 <script>
 export default {
   name: "App",
-  data: () => ({}),
+  data: () => ({
+    showPassword : false
+  }),
 };
 </script>
